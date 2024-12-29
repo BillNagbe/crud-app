@@ -1,38 +1,45 @@
+/** Variables **/
 :root {
     --ff:  Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     --fs: 1.5rem;
-
+    --center: center;
+    --sm-padding: 0.5rem;
+    --flexy: flex;
+    --100: 100%;
+    --round-radius: 10px;
 }
 
 html {
     
 }
 
+/** Outline of layout **/
 body {
     min-height: 100vh;
     display: grid;
-    grid-template-columns: 100%;
-    place-content: center;
+    grid-template-columns: var(--100);
+    place-content: var(--center);
 }
 
 button {
     border-radius: 5px;
-    padding: 0.5rem;
+    padding: var(--sm-padding);
 }
 
 .outline {
-    place-items: center;
+    place-items: var(--center);
     outline: 5px double black;
+    border-radius: var(--round-radius);
     width: 75vw;
     height: 75vh;
     margin: 0 auto;
 }
 
 .top-level {
-    display: flex;
+    display: var(--flexy);
     justify-content: space-around;
-    align-items: center;
-    width: 100%;
+    align-items: var(--center);
+    width: var(--100);
     margin-top: 2.5rem;
 }
 
@@ -40,16 +47,16 @@ button {
     width: 70%;
     outline: 1px solid;
     height: 65%;
-    display: flex;
-    justify-content: center;
+    display: var(--flexy);
+    justify-content: var(--center);
     overflow: scroll;
     margin: 0.5rem 0;
-    border-radius: 10px;
+    border-radius: var(--round-radius);
 }
 
 
 .bottom-level {
-    display: flex;
+    display: var(--flexy);
     justify-content: space-around;
-    width: 100%;
+    width: var(--100);
 }
