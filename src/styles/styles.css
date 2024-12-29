@@ -1,0 +1,31 @@
+:root {
+    --ff:  Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    --fs: 1.5rem;
+
+}
+
+html {
+    
+}
+
+body {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 100%;
+}
+
+.outline {
+    place-items: center;
+    outline: 5px double black;
+    width: 75vw;
+    height: auto;
+    margin: 0 auto;
+}
+
+.top-level {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    margin-top: 2.5rem;
+}
