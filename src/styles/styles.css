@@ -1,6 +1,7 @@
 /** Variables **/
 :root {
     --ff:  Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    --main--ff: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     --fs: 1.5rem;
     --center: center;
     --sm-padding: 0.5rem;
@@ -19,11 +20,21 @@ body {
     display: grid;
     grid-template-columns: var(--100);
     place-content: var(--center);
+    font-family: var(--main--ff);
 }
 
 button {
     border-radius: 5px;
     padding: var(--sm-padding);
+}
+
+h1 {
+    font-size: calc(var(--fs) * 1.5);
+    letter-spacing: .85rem;
+    border-bottom: 2px solid;
+    height: fit-content;
+    width: fit-content;
+    text-align: center;
 }
 
 .outline {
