@@ -110,6 +110,15 @@ button {
 
 
 
+input {
+    width: 33%;
+    height: 1rem;
+    border-radius: 5px;
+}
+
+input:active, input:focus {
+    border-color: #000;
+}
 
 
 
