@@ -1,3 +1,4 @@
+// creates containers for document objects with Ids
 const inputText = document.getElementById("add-item");
 
 const addBtn = document.getElementById("create");
@@ -12,11 +13,13 @@ const span = document.createElement("span");
 const p = document.createElement("p");
 const btn = document.createElement("button");
 
+// takes input value as innerHTML to a p element 
+p.innerHTML = inputText;
+
 span.appendChild(p);
 span.appendChild(btn);
 
-console.log(span);
 
 addBtn.addEventListener("click", () => {
-    listBox.innerHTML = inputText;
+    listBox.innerHTML = span;
 });
